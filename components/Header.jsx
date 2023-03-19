@@ -42,35 +42,37 @@ const Header = () => {
           }  `}
         >
           <Link href={`/`}>
-            <span
+            <button onClick={handleToggle}
               className={` ${router.pathname == "/" ? "hidden" : router.pathname == "/Urchadvar"? "hidden":router.pathname == "/Academy"?"hidden":""}
               md:float-right mt-2 align-middle list-item list-none text-black  text-xl mx-4 my-6 md:my-0 cursor-pointer  hover:text-[#d42b32] duration-500 `}
             >
               НҮҮР ХУУДАС
-            </span>
+            </button>
           </Link>
           <Link href={`/Burtguuleh`}>
-            <span
+            <button 
+            onClick={handleToggle}
               className={` ${router.pathname == "/Burtguuleh" ? "hidden" : router.pathname == "/" ? "hidden": " "}
               md:float-right mt-2 align-middle list-item list-none  text-xl mx-4 my-6 md:my-0 cursor-pointer font-semibold text-[#d42b32] duration-500  `}
             >
               БҮРТГҮҮЛЭХ
-            </span>
+            </button>
           </Link>
           <Link href={`/Contact`}>
-            <span className="md:float-right mt-2 align-middle list-item list-none text-black text-xl mx-4 my-6 md:my-0 cursor-pointer   hover:text-[#d42b32] duration-500  ">
+            <button 
+            onClick={handleToggle} className="md:float-right mt-2 align-middle list-item list-none text-black text-xl mx-4 my-6 md:my-0 cursor-pointer   hover:text-[#d42b32] duration-500  ">
               ХОЛБОО БАРИХ
-            </span>
+            </button>
           </Link>
           <Link href={`/post/`}>
-            <span className="md:float-right mt-2 align-middle list-item list-none text-black  text-xl mx-4 my-6 md:my-0 cursor-pointer  hover:text-[#d42b32] duration-500 ">
+            <button onClick={handleToggle} className="md:float-right mt-2 align-middle list-item list-none text-black  text-xl mx-4 my-6 md:my-0 cursor-pointer  hover:text-[#d42b32] duration-500 ">
               BLOG
-            </span>
+            </button>
           </Link>
           <Link href={`/About`}>
-            <span className="md:float-right mt-2 align-middle list-item  list-none text-black  text-xl mx-4 my-6 md:my-0 cursor-pointer hover:text-[#d42b32] duration-500  ">
+            <button onClick={handleToggle} className="md:float-right mt-2 align-middle list-item  list-none text-black  text-xl mx-4 my-6 md:my-0 cursor-pointer hover:text-[#d42b32] duration-500  ">
               БИДНИЙ ТУХАЙ
-            </span>
+            </button>
           </Link>
         </div>
       </div>
