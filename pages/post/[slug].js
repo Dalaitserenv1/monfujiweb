@@ -5,10 +5,7 @@ import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 
 const PostDetails = ({ post }) => {
-  const router =useRouter();
-  if(router.isFallback){
-    return <Louder/>
-  }
+  
   return (
 
     <div className="container mx-auto mb-8">
@@ -43,6 +40,6 @@ export async function getStaticPaths() {
   const posts = await getPosts();
   return {
     paths: posts.map(({ slug }) => ({ params: { slug } })),
-    fallback: true,
+    fallback: false,
   };
 }
