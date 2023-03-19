@@ -52,7 +52,7 @@ const Header = () => {
           <Link href={`/Burtguuleh`}>
             <span
               className={` ${router.pathname == "/Burtguuleh" ? "hidden" : router.pathname == "/" ? "hidden": " "}
-              md:float-right mt-2 align-middle list-item list-none text-white rounded-full px-2 py-1 text-xl mx-4 my-6 md:my-0 cursor-pointer font-semibold  bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  `}
+              md:float-right mt-2 align-middle list-item list-none  text-xl mx-4 my-6 md:my-0 cursor-pointer font-semibold text-[#d42b32] duration-500  `}
             >
               БҮРТГҮҮЛЭХ
             </span>
