@@ -14,7 +14,7 @@ const FirstPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Nuur />
-      <div className=" grid md:grid-cols-9  grid-rows-4 justify-center h-screen  mb-8 text-black  text-xl  ">
+      <div className=" grid md:grid-cols-9  justify-center h-screen  mb-8 text-black  text-xl  ">
         <Sidebar />
         <Monfuji />
       </div>

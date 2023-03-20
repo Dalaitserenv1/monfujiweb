@@ -22,7 +22,7 @@ const Urchadvar = () => {
 
         <div
           className="  
-        relative text-white px-5  font-sans text-left  font-thin bg-[#d42b32]"
+        relative text-white px-5  font-sans text-left text-2xl font-thin bg-[#d42b32]"
         >
           TOKUTEIGINO БУЮУ УР ЧАДВАРТАЙ АЖИЛТАН
         </div>
@@ -30,7 +30,7 @@ const Urchadvar = () => {
           className="  
         relative text-black  text-justify"
         >
-          <div className=" bg-white p-5 pb-10">
+          <div className=" bg-white p-5 pb-10 text-base md:text-xl">
             2018 оны 12 сарын Засгийн газрын ээлжит бус хурлаар “Ур чадвартай
             ажилтан”-ны оршин суух зөвшөөрлийг шинээр оруулах “Хилийн шалган
             нэвтрүүлэх болон Цагаачлал, дүрвэгсдийг хүлээн зөвшөөрөх тухай
@@ -39,7 +39,7 @@ const Urchadvar = () => {
             ажиллах хүчний хомсдолтой аж үйлдвэрийн салбарт “Ур чадвартай”
             гадаадаад ажилтан хүлээн авах боломжтой болсон.
           </div>
-          <div className=" bg-white p-5 pb-10">
+          <div className=" bg-white p-5 pb-10 text-base md:text-xl">
             Энэхүү “Ур чадвартай ажилтан”-ны оршин суух зөвшөөрөл нь жижиг дунд
             үйлдвэрлэл, бичил бизнес эрхлэгчдийн ажиллах хүчний хомсдолыг
             арилгах зорилготой юм. Япон улс нь үйлдвэрлэлийн бүтээмжийг
@@ -54,7 +54,7 @@ const Urchadvar = () => {
           <Image src={zurag2} alt="zurag2" />
           <div
             className="  
-        relative text-white px-5  font-sans text-left  font-thin bg-[#d42b32]"
+        relative text-white px-5  font-sans text-left text-2xl font-thin bg-[#d42b32]"
           >
             УР ЧАДВАРТАЙ АЖИЛТНААР ХЭРХЭН ЯВАХ ВЭ?
           </div>
@@ -62,7 +62,7 @@ const Urchadvar = () => {
             className="  
         relative text-black  text-justify"
           >
-            <div className=" bg-white p-5 pb-10">
+            <div className=" bg-white p-5 pb-10 text-base md:text-xl">
               Тусгай ур чадвартай ажилтны 14 төрөлд шалгалт өгөн шалгалтандаа
               тэнцсэн мөн тодорхой шалгууруудад тэнцсэн тохиолдолд Япон орон руу
               явах бүрэн боломжтой
@@ -71,14 +71,14 @@ const Urchadvar = () => {
         </div>
         <div
           className="  
-        relative text-white px-5  font-sans text-left  font-thin bg-[#d42b32] mt-10"
+        relative text-white px-5  font-sans text-left text-2xl font-thin bg-[#d42b32] mt-10"
         >
           УР ЧАДВАРТАЙ АЖИЛТНЫ ШАЛГАЛТ ӨГӨХ ТӨРЛҮҮД
         </div>
         <Image src={zurag3} alt="zurag3" />
         <div
           className="  
-        relative text-white px-5  font-sans text-left  font-thin bg-[#d42b32] mt-10"
+        relative text-white px-5  font-sans text-left text-2xl font-thin bg-[#d42b32] mt-10"
         >
           УР ЧАДВАРТАЙ АЖИЛТНЫ ДАВУУ ТАЛ
         </div>
@@ -120,7 +120,7 @@ const Urchadvar = () => {
         </div>
         <div
           className="  
-        relative text-white px-5  font-sans text-left  font-thin bg-[#d42b32] mt-10"
+        relative text-white px-5  font-sans text-left text-2xl font-thin bg-[#d42b32] mt-10"
         >
           ТАВИГДАХ ШААРДЛАГА
         </div>

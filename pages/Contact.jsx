@@ -11,13 +11,14 @@ const SecondPage = () => {
         <title>Contact</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-       <div className="grid md:grid-cols-2 m-5">
+       <div className="grid sm:grid-cols-2 m-5">
         <div >
         <Image src={bairshil} alt="map" />
         </div>
-        <div className=' flex flex-col space-y-5 justify-center items-center text-left'>
+        <div className=' flex flex-col space-y-5 justify-center  items-center text-left'>
         Хаяг: Баянзүрх дүүрэг, 25 хороо, нарны зам Lux tower 2 давхар
-        <div>Имайл хаяг: monfuji.coltd@gmail.com </div>
+        <span>Имайл хаяг: monfuji.coltd@gmail.com </span>
+        <span>Утас:97103322</span>
         <Link
             href={`https://www.facebook.com/monfuji.coltd`}
           >

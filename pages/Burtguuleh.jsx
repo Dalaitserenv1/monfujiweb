@@ -14,11 +14,11 @@ const nuur = () => {
         <title>Monfuji</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="grid md:grid-cols-3 bg-white ">
+      <div className="grid sm:grid-cols-3 bg-white ">
         <div className="drop-shadow-2xl justify-between rounded-lg p-10 m-5 bg-white flex flex-col items-center space-y-5 ">
           <Image src={zurag1} alt="zurag1" width={150} height={150} />
           <div className="text-center font-bold ">МОНФУЖИ ТӨВ</div>
-          <div className=" text-justify">
+          <div className=" text-justify text-base sm:text-xl">
             МонФужи төв нь 2011 оноос хойш Япон улсын Их Дээд сургуулиудад
             оюутнууд илгээх, Үндсэн ажилтан илгээх хөтөлбөр, Аялал жуулчлал,
             Бизнес консалтинг, Гадаад Дотоод худалдаа зэрэг өргөн хүрээнд үйл
@@ -37,7 +37,7 @@ const nuur = () => {
           <div className="text-center font-bold">
             ТУСГАЙ УР ЧАДВАРТАЙ АЖИЛТАН БЭЛТГЭХ ТӨВ
           </div>
-          <div className=" text-justify">
+          <div className=" text-justify text-base sm:text-xl">
             2019 оны 4-р сараас эхлэн Япон улсын аж үйлдвэрийн зарим нэгэн
             салбарт тухайн мэргэжлээр бэлтгэгдсэн гадаадын боловсон хүчнийг
             хүлээн авах &quot;Тусгай ур чадвартай ажилтан&quot; буюу SSW гэсэн оршин суух
@@ -57,7 +57,7 @@ const nuur = () => {
           <div className="text-center font-bold ">
             МОНФУЖИ ГЛОБАЛ СКИЛЛ АКАДЕМИ
           </div>
-          <div className=" text-justify">
+          <div className=" text-justify text-base sm:text-xl">
             Бид Монгол улсын ирээдүй болсон хүүхэд залуустаа орчин цагийн
             залуусын хамгийн их сонирхдог боловсрол мэргэжлийг Япон болон Франц
             улсын заах арга, сургалтын системээр олгож байгаа бөгөөд Мөн

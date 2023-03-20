@@ -13,20 +13,20 @@ const Academy = () => {
   return (
     <div className="container mx-auto ">
       
-    <div className=" grid md:grid-cols-9 grid-rows-4 h-screen justify-center mb-8 text-black  text-xl  ">
+    <div className=" grid sm:grid-cols-9 grid-rows-4 h-screen justify-center mb-8 text-black  text-xl  ">
       <Head>
         <title>Monfuji</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Sidebar />
-      <div className="bg-white md:col-span-8 row-span-4 md:rounded-r-lg">
+      <div className="bg-white sm:col-span-8 row-span-4 sm:rounded-r-lg">
         <Image src={zurag7} alt="zurag7" />
         <div
           className="  
         relative text-black  text-justify"
         >
-          <div className=" bg-white p-5 pb-10 grid md:grid-cols-2">
-            <div className=" text-justify p-5 m-5">
+          <div className=" bg-white p-5 pb-10 grid sm:grid-cols-2">
+            <div className=" text-justify   text-base sm:text-xl m-10">
               Бид Монгол улсын ирээдүй болсон хүүхэд залуустаа орчин цагийн
               залуусын хамгийн их сонирхдог боловсрол мэргэжлийг Япон болон
               Франц улсын заах арга, сургалтын системээр олгох зорилготой бөгөөд
@@ -41,7 +41,7 @@ const Academy = () => {
         </div>
         <div
           className="  
-        relative text-white px-5 mt-10 font-sans text-left  font-thin bg-[#d42b32]"
+        relative text-white px-5 mt-10 font-sans text-left text-2xl font-thin bg-[#d42b32]"
         >
           СУРАЛЦАХ МЭРГЭЖЛҮҮД
         </div>
@@ -49,7 +49,7 @@ const Academy = () => {
           className="  
         relative text-black mb-5 text-justify bg-white"
         >
-          <div className="  p-5 grid md:grid-cols-4">
+          <div className="  p-5 grid sm:grid-cols-4">
             <div className="text-center p-5">
               <Image src={zurag9} alt="zurag9" />
               <h2>GRAPHIC DESIGN</h2>
@@ -71,7 +71,7 @@ const Academy = () => {
               /ХУВЦАС ДИЗАЙН, ҮНЭТ ЭДЛЭЛ ДАРХАН/
             </div>
           </div>
-          <div className="flex flex-row drop-shadow-2xl rounded-lg p-10 mx-5 bg-white">
+          <div className="flex flex-row drop-shadow-2xl rounded-lg p-10 mx-5 text-base sm:text-xl bg-white">
             Үсчин болон бусад мэргэжлүүдийн суурь мэдлэгийн хурдан хугацаанд маш
             чанартайгаар заах, эзэмшүүлэх болно.
           </div>

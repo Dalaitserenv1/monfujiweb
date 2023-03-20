@@ -6,49 +6,40 @@ import amjilt from "../public/Picture3.png";
 const Monfuji = () => {
   return (
     <>
-      <div className="md:col-span-8 row-span-4 mb-10 md:rounded-r-lg relative  w-100 h-100">
-        <Image
-          src={background}
-          alt="Monfujiback"
-          layout="fill"
-          objectFit="cover"
-        />
-        <div className="relative text-[#000000] underline underline-offset-1 font-sans text-center pt-10 pb-40 mb-10 text-3xl font-bold">
-          <div className="">МОНФУЖИ ТӨВ</div>
-        </div>
-        <div
-          className="  
-        relative text-white px-5 mt-40 font-sans text-left  font-thin bg-[#d42b32]"
-        >
-          МОНФУЖИ ТӨВИЙН ЗОРИЛГО
-        </div>
-        <div
-          className="  
-        relative text-black  text-justify"
-        >
-          <div className=" bg-white p-5 pb-10">
-            Монфужи” ХХК нь 2011 оноос хойш Япон улсын Их Дээд сургуулиудад
-            оюутнууд илгээх, Үндсэн ажилтан илгээх хөтөлбөр, Аялал жуулчлал,
-            Бизнес консалтинг, Гадаад Дотоод худалдаа зэрэг өргөн хүрээнд үйл
-            ажиллагаа явуулсаар ирсэн бөгөөд Тухайн орон руу явах хүсэлтэй
-            байгаа хувь хүн болон хүүхдийн Хэлний мэдлэг, Материал бүрдүүлэлт
-            болон Виз мэдүүлэг зэрэг бүх үйл ажиллагааг манай байгууллага
-            хариуцан найдвартайгаар ажилласаар байна. Мөн хүүхэд залуусаа
-            дэлхийн хэмжээний боловсролтой боловсон хүчин болгох зорилготойгоор
-            Таны ирээдүйд оюуны хөрөнгө оруулалт хийн хамтран ажиллах болсондоо
-            таатай байна. Та хичээгээрэй, Бид дэмжье. Уриатайгаар ажилласаар
-            байна.
+      <div className="sm:col-span-8  mb-10 sm:rounded-r-lg   w-100 h-100">
+        <div className="relative ">
+          <Image src={background} alt="Monfujiback" objectFit="cover" />
+          
+          <div className="sm:absolute bottom-0">
+            <div className="  text-white px-5 mt-0 font-sans text-left text-2xl font-thin bg-[#d42b32]">
+              МОНФУЖИ ТӨВИЙН ЗОРИЛГО
+            </div>
+            <div className=" text-black  text-justify">
+              <div className=" bg-white p-5 pb-10 text-base sm:text-xl">
+                Монфужи” ХХК нь 2011 оноос хойш Япон улсын Их Дээд сургуулиудад
+                оюутнууд илгээх, Үндсэн ажилтан илгээх хөтөлбөр, Аялал жуулчлал,
+                Бизнес консалтинг, Гадаад Дотоод худалдаа зэрэг өргөн хүрээнд
+                үйл ажиллагаа явуулсаар ирсэн бөгөөд Тухайн орон руу явах
+                хүсэлтэй байгаа хувь хүн болон хүүхдийн Хэлний мэдлэг, Материал
+                бүрдүүлэлт болон Виз мэдүүлэг зэрэг бүх үйл ажиллагааг манай
+                байгууллага хариуцан найдвартайгаар ажилласаар байна. Мөн хүүхэд
+                залуусаа дэлхийн хэмжээний боловсролтой боловсон хүчин болгох
+                зорилготойгоор Таны ирээдүйд оюуны хөрөнгө оруулалт хийн хамтран
+                ажиллах болсондоо таатай байна. Та хичээгээрэй, Бид дэмжье.
+                Уриатайгаар ажилласаар байна.
+              </div>
+            </div>
           </div>
         </div>
         <div
           className="  
-        relative text-white px-5 mt-10 font-sans text-left  font-thin bg-[#d42b32]"
+         text-white px-5 mt-10 font-sans text-left text-2xl font-thin bg-[#d42b32]"
         >
           ХӨТӨЛБӨРҮҮД
         </div>
         <div
           className="  
-        relative text-black  text-justify"
+         text-black  text-justify"
         >
           <div className=" bg-white p-5 pb-10">
             <Image src={chiglel} alt="chiglel" />
@@ -56,25 +47,22 @@ const Monfuji = () => {
         </div>
         <div
           className="  
-        relative text-black mt-10"
+         text-black mt-10"
         >
-          
-
           <div
             className="  
-        relative text-white px-5  font-sans text-left  font-thin bg-[#d42b32]"
+        text-white px-5  font-sans text-left text-2xl font-thin bg-[#d42b32]"
           >
-           
             БИДНИЙ АМЖИЛТ
           </div>
         </div>
         <div
           className="  
-        relative text-black  text-justify bg-white"
-        ><Image src={amjilt} alt="amjilt" />
-           
-          <div className=" bg-white p-5 pb-10">
-         
+         text-black  text-justify bg-white"
+        >
+          <Image src={amjilt} alt="amjilt" />
+
+          <div className=" bg-white p-5 pb-10 text-base sm:text-xl">
             Манай МонФүжи ХХК нь үйл ажиллагаа явуулаад 10 жил болж байгаа
             туршлагатай байгууллага бөгөөд 2020-2021 оны байдлаар Япон хэлний
             сургууль, Их дээд сургууль, Мэргэжлийн сургууль, Магистр,Сонингийн
