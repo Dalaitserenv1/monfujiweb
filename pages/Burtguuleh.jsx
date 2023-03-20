@@ -14,7 +14,7 @@ const nuur = () => {
         <title>Monfuji</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="grid sm:grid-cols-3 bg-white ">
+      <div className="grid lg:grid-cols-3 bg-white ">
         <div className="drop-shadow-2xl justify-between rounded-lg p-10 m-5 bg-white flex flex-col items-center space-y-5 ">
           <Image src={zurag1} alt="zurag1" width={150} height={150} />
           <div className="text-center font-bold ">МОНФУЖИ ТӨВ</div>
