@@ -8,8 +8,8 @@ import Head from "next/head";
 import { motion } from "framer-motion";
 const nuur = () => {
   return (
-    <motion.div initial={{ opacity: 0 }}
-    whileInView={{ opacity: 1 }} className="container mx-auto pb-10 mb-10">
+    <div 
+    className="container mx-auto pb-10 mb-10">
        
       <Head>
         <title>Monfuji</title>
@@ -75,7 +75,7 @@ const nuur = () => {
           </Link>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

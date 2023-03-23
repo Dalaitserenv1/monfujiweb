@@ -3,12 +3,15 @@ import Image from "next/image";
 import background from "../public/Picture1.png";
 import chiglel from "../public/Picture2.png";
 import amjilt from "../public/Picture3.png";
+import { motion } from "framer-motion";
 
 
 const Monfuji = () => {
   return (
     <>
-      <div className="sm:col-span-8  mb-10 sm:rounded-r-lg   w-100 h-100">
+      <motion.div 
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }} className="sm:col-span-8  mb-10 sm:rounded-r-lg   w-100 h-100">
         <div className="relative ">
           <Image src={background} alt="Monfujiback" objectFit="cover" />
 
@@ -79,7 +82,7 @@ const Monfuji = () => {
             салбараа нээн үйл ажиллагаа явуулсаар байна
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

@@ -13,9 +13,8 @@ import { motion } from "framer-motion";
 
 const Academy = () => {
   return (
-    <motion.div 
-    initial={{ opacity: 0 }}
-    whileInView={{ opacity: 1 }} className="container mx-auto ">
+    <div 
+    className="container mx-auto ">
       
     <div className=" grid sm:grid-cols-9 grid-rows-4 h-screen justify-center mb-8 text-black  text-xl  ">
       <Head>
@@ -82,7 +81,7 @@ const Academy = () => {
         </div>
       </div>
     </div>
-    </motion.div>
+    </div>
   );
 };
 
