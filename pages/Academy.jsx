@@ -9,9 +9,13 @@ import zurag10 from "../public/Picture10.png";
 import zurag11 from "../public/Picture11.png";
 import zurag12 from "../public/Picture12.png";
 import Nuur from "./Burtguuleh";
+import { motion } from "framer-motion";
+
 const Academy = () => {
   return (
-    <div className="container mx-auto ">
+    <motion.div 
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }} className="container mx-auto ">
       
     <div className=" grid sm:grid-cols-9 grid-rows-4 h-screen justify-center mb-8 text-black  text-xl  ">
       <Head>
@@ -78,7 +82,7 @@ const Academy = () => {
         </div>
       </div>
     </div>
-    </div>
+    </motion.div>
   );
 };
 

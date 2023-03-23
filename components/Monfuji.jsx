@@ -3,13 +3,15 @@ import Image from "next/image";
 import background from "../public/Picture1.png";
 import chiglel from "../public/Picture2.png";
 import amjilt from "../public/Picture3.png";
+
+
 const Monfuji = () => {
   return (
     <>
       <div className="sm:col-span-8  mb-10 sm:rounded-r-lg   w-100 h-100">
         <div className="relative ">
           <Image src={background} alt="Monfujiback" objectFit="cover" />
-          
+
           <div className="sm:absolute bottom-0">
             <div className="  text-white px-5 mt-0 font-sans text-left text-2xl font-thin bg-[#d42b32]">
               МОНФУЖИ ТӨВИЙН ЗОРИЛГО

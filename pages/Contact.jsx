@@ -3,10 +3,12 @@ import Head from "next/head";
 import Link from "next/link";
 import bairshil from "../public/bairshil.png"
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const SecondPage = () => {
   return (
-    <div className="container mx-auto text-xl justify-center  mt-8 mb-8 p-12  text-black  bg-white  ">
+    <motion.div   initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }} className="container mx-auto text-xl justify-center  mt-8 mb-8 p-12  text-black  bg-white  ">
         <Head>
         <title>Contact</title>
         <link rel="icon" href="/favicon.ico" />
@@ -35,7 +37,7 @@ const SecondPage = () => {
           </Link>
         </div>
         </div> 
-    </div>
+    </motion.div>
   )
 }
 

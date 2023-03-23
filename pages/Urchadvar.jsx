@@ -7,9 +7,12 @@ import zurag2 from "../public/Picture4.png";
 import zurag3 from "../public/Picture5.png";
 import zurag4 from "../public/Picture6.jpg";
 import Nuur from "./Burtguuleh";
+import { motion } from "framer-motion";
+
 const Urchadvar = () => {
   return (
-    <div className="container mx-auto">
+    <div initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}  className="container mx-auto">
       
     <div className=" grid md:grid-cols-9 grid-rows-4 h-screen justify-center mb-8 text-black  text-xl  ">
       <Head>

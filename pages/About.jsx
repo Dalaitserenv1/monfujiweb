@@ -8,16 +8,19 @@ import zurag4 from "../public/2.png";
 import zurag5 from "../public/3.png";
 import zurag6 from "../public/4.png";
 import zurag7 from "../public/5.png";
+import { motion } from "framer-motion";
+
 const SecondPage = () => {
   return (
-    <div>
+    <motion.div  initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}>
       {" "}
       <Head>
         <title>AboutUs</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="container mx-auto">
-        <div className="   text-justify grid md:grid-cols-2 bg-white ">
+        <div className="   text-justify grid sm:grid-cols-2 bg-white ">
           <div className=" text-white bg-[#d42b32] p-5 pb-10  items-center">
             <div className="text-3xl text-center font-bold p-5">
               БИДНИЙ ТУХАЙ
@@ -81,7 +84,7 @@ const SecondPage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

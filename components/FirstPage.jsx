@@ -5,10 +5,15 @@ import Sidebar from "./Sidebar";
 import Monfuji from "./Monfuji";
 import Nuur from "../pages/Burtguuleh";
 import Head from "next/head";
+import { motion } from "framer-motion";
 
 const FirstPage = () => {
   return (
-    <div className="container mx-auto">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      className="container mx-auto"
+    >
       <Head>
         <title>Monfuji</title>
         <link rel="icon" href="/favicon.ico" />
@@ -18,7 +23,7 @@ const FirstPage = () => {
         <Sidebar />
         <Monfuji />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

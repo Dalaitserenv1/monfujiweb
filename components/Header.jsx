@@ -2,6 +2,8 @@ import React, { useContext, useEffect, useState } from "react";
 import Link from "next/link";
 import image from "../public/fujilogo.jpg";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
 import { useRouter } from "next/router";
 const Header = () => {
   const [isActive, setActive] = useState("false");
@@ -10,7 +12,11 @@ const Header = () => {
     setActive(!isActive);
   };
   return (
-    <div className="container mx-auto w-screen mb-8">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      className="container mx-auto w-screen mb-8"
+    >
       <div
         className={`drop-shadow-xl w-full py-8 md:flex md:items=center md:justify-between ${
           router.route == "/"
@@ -42,41 +48,64 @@ const Header = () => {
           }  `}
         >
           <Link href={`/`}>
-            <button onClick={handleToggle}
-              className={` ${router.pathname == "/" ? "hidden" : router.pathname == "/Urchadvar"? "hidden":router.pathname == "/Academy"?"hidden":""}
+            <button
+              onClick={handleToggle}
+              className={` ${
+                router.pathname == "/"
+                  ? "hidden"
+                  : router.pathname == "/Urchadvar"
+                  ? "hidden"
+                  : router.pathname == "/Academy"
+                  ? "hidden"
+                  : ""
+              }
               md:float-right mt-2 align-middle list-item list-none text-black  text-xl mx-4 my-6 md:my-0 cursor-pointer  hover:text-[#d42b32] duration-500 `}
             >
               НҮҮР ХУУДАС
             </button>
           </Link>
           <Link href={`/Burtguuleh`}>
-            <button 
-            onClick={handleToggle}
-              className={` ${router.pathname == "/Burtguuleh" ? "hidden" : router.pathname == "/" ? "hidden": " "}
+            <button
+              onClick={handleToggle}
+              className={` ${
+                router.pathname == "/Burtguuleh"
+                  ? "hidden"
+                  : router.pathname == "/"
+                  ? "hidden"
+                  : " "
+              }
               md:float-right mt-2 align-middle list-item list-none  text-xl mx-4 my-6 md:my-0 cursor-pointer font-semibold text-[#d42b32] duration-500  `}
             >
               БҮРТГҮҮЛЭХ
             </button>
           </Link>
           <Link href={`/Contact`}>
-            <button 
-            onClick={handleToggle} className="md:float-right mt-2 align-middle list-item list-none text-black text-xl mx-4 my-6 md:my-0 cursor-pointer   hover:text-[#d42b32] duration-500  ">
+            <button
+              onClick={handleToggle}
+              className="md:float-right mt-2 align-middle list-item list-none text-black text-xl mx-4 my-6 md:my-0 cursor-pointer  hover:text-[#d42b32] duration-500  "
+            >
               ХОЛБОО БАРИХ
             </button>
           </Link>
           <Link href={`/post/`}>
-            <button onClick={handleToggle} className="md:float-right mt-2 align-middle list-item list-none text-black  text-xl mx-4 my-6 md:my-0 cursor-pointer  hover:text-[#d42b32] duration-500 ">
+            <button
+              onClick={handleToggle}
+              className="md:float-right mt-2 align-middle list-item list-none text-black  text-xl mx-4 my-6 md:my-0 cursor-pointer  hover:text-[#d42b32] duration-500 "
+            >
               BLOG
             </button>
           </Link>
           <Link href={`/About`}>
-            <button onClick={handleToggle} className="md:float-right mt-2 align-middle list-item  list-none text-black  text-xl mx-4 my-6 md:my-0 cursor-pointer hover:text-[#d42b32] duration-500  ">
+            <button
+              onClick={handleToggle}
+              className="md:float-right mt-2 align-middle list-item  list-none text-black  text-xl mx-4 my-6 md:my-0 cursor-pointer hover:text-[#d42b32] duration-500  "
+            >
               БИДНИЙ ТУХАЙ
             </button>
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

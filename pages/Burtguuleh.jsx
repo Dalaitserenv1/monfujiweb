@@ -5,11 +5,12 @@ import zurag2 from "../public/academy.png";
 import zurag3 from "../public/urchadvar.png";
 import Link from "next/link";
 import Head from "next/head";
-
+import { motion } from "framer-motion";
 const nuur = () => {
   return (
-    <div className="container mx-auto pb-10 mb-10">
-      
+    <motion.div initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }} className="container mx-auto pb-10 mb-10">
+       
       <Head>
         <title>Monfuji</title>
         <link rel="icon" href="/favicon.ico" />
@@ -74,7 +75,7 @@ const nuur = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
