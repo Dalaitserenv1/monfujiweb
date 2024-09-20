@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from "next/head";
 import Link from "next/link";
-import bairshil from "../public/bairshil.png"
+import bairshil from "../public/bairshil.jpg"
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -18,7 +18,7 @@ const SecondPage = () => {
         <Image src={bairshil} alt="map" />
         </div>
         <div className=' flex flex-col space-y-5 justify-center  items-center text-left'>
-        Хаяг: Баянзүрх дүүрэг, 25 хороо, нарны зам Lux tower 2 давхар
+        Чингэлтэй дүүрэг, 4-р хороо, Бага тойруу 6/5 Монфужи байр 2 давхар
         <span>Имайл хаяг: monfuji.coltd@gmail.com </span>
         <span>Утас:97103322</span>
         <Link
@@ -29,7 +29,7 @@ const SecondPage = () => {
             </span>
           </Link>
           <Link
-            href={`https://goo.gl/maps/gmcRskVBH7HBD3Ko8`}
+            href={`https://maps.app.goo.gl/hQKDtS9TKgAAWxPh6`}
           >
             <span className="transition duration-500 ease transform hover:-translate-y-1 bg-[#ff7142] text-lg font-medium rounded-full text-white px-8 py-2 cursor-pointer">
               Google map
